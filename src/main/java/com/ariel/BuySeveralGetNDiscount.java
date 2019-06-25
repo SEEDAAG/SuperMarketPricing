@@ -1,11 +1,11 @@
 package com.ariel;
 
-public class XForYDiscount implements Discount<CountableArticle> {
+public class BuySeveralGetNDiscount implements Discount<CountableArticle> {
 
     private final int x;
     private final int y;
 
-    public XForYDiscount(int x, int y) {
+    public BuySeveralGetNDiscount(int x, int y) {
         this.x = x;
         this.y = y;
     }

@@ -8,7 +8,7 @@ public class InMemoryData implements DiscountProvider{
     private Map<Integer, Discount> promotions = new HashMap<>();
 
     public InMemoryData() {
-        this.promotions.put(1, new XForYDiscount(3, 2));
+        this.promotions.put(1, new BuySeveralGetNDiscount(3, 2));
         this.promotions.put(2, new QuantityForPriceDiscount(3,new Price(1d)));
 
     }
