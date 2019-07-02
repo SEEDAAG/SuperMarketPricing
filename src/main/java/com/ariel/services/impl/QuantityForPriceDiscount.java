@@ -1,6 +1,8 @@
-package com.ariel;
+package com.ariel.services.impl;
 
-import java.util.List;
+import com.ariel.entities.CountableArticle;
+import com.ariel.entities.Price;
+import com.ariel.services.model.Discount;
 
 public class QuantityForPriceDiscount implements Discount<CountableArticle> {
 

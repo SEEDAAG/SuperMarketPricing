@@ -1,4 +1,8 @@
-package com.ariel;
+package com.ariel.services;
+
+import com.ariel.entities.Article;
+import com.ariel.services.model.Discount;
+import com.ariel.services.model.DiscountProvider;
 
 import java.util.List;
 

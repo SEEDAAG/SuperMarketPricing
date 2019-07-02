@@ -1,12 +1,12 @@
-package com.ariel;
+package com.ariel.entities;
 
 public class WeightableArticle extends Article {
 
 
     private final double weight;
 
-    public WeightableArticle(int id, Price price, double weight) {
-        super(price, id);
+    public WeightableArticle(int id, ArticleName articleName, Price price, double weight) {
+        super(id, articleName, price);
         this.weight = weight;
     }
 

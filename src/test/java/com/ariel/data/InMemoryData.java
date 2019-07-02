@@ -1,9 +1,15 @@
-package com.ariel;
+package com.ariel.data;
+
+import com.ariel.entities.Price;
+import com.ariel.services.impl.BuySeveralGetNDiscount;
+import com.ariel.services.model.Discount;
+import com.ariel.services.model.DiscountProvider;
+import com.ariel.services.impl.QuantityForPriceDiscount;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class InMemoryData implements DiscountProvider{
+public class InMemoryData implements DiscountProvider {
 
     private Map<Integer, Discount> promotions = new HashMap<>();
 

@@ -1,5 +1,8 @@
 package com.ariel;
 
+import com.ariel.data.InMemoryData;
+import com.ariel.entities.*;
+import com.ariel.services.Basket;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,8 +19,8 @@ public class BasketTest {
 
         List<Article> articles = new ArrayList<>();
 
-        articles.add(new CountableArticle(2, new Price(10d), 8));
-        articles.add(new CountableArticle(1, new Price(10d), 7));
+        articles.add(new CountableArticle(2, ArticleName.LIVRE, new Price(10d), 8));
+        articles.add(new CountableArticle(1,ArticleName.LAIT, new Price(10d), 7));
 
         Basket basket = new Basket(articles,new InMemoryData() );
 
@@ -38,8 +41,8 @@ public class BasketTest {
 
         List<Article> articles = new ArrayList<>();
 
-        articles.add(new CountableArticle(2, new Price(10d), 8));
-        articles.add(new CountableArticle(1, new Price(10d), 7));
+        articles.add(new CountableArticle(2, ArticleName.LIVRE, new Price(10d), 8));
+        articles.add(new CountableArticle(1,ArticleName.LAIT, new Price(10d), 7));
 
         Basket basket = new Basket(articles,new InMemoryData() );
 
@@ -60,8 +63,8 @@ public class BasketTest {
 
         List<Article> articles = new ArrayList<>();
 
-        articles.add(new CountableArticle(2, new Price(10d), 8));
-        articles.add(new CountableArticle(1, new Price(10d), 7));
+        articles.add(new CountableArticle(2, ArticleName.LIVRE, new Price(10d), 8));
+        articles.add(new CountableArticle(1,ArticleName.LAIT, new Price(10d), 7));
 
         Basket basket = new Basket(articles,new InMemoryData() );
 
@@ -83,9 +86,9 @@ public class BasketTest {
 
         List<Article> articles = new ArrayList<>();
 
-        articles.add(new CountableArticle(2, new Price(10d), 8));
-        articles.add(new CountableArticle(1, new Price(10d), 7));
-        articles.add(new WeightableArticle(3, new Price(10d), 16));
+        articles.add(new CountableArticle(2, ArticleName.LIVRE, new Price(10d), 8));
+        articles.add(new CountableArticle(1,ArticleName.LAIT, new Price(10d), 7));
+        articles.add(new WeightableArticle(3, ArticleName.VIANDE, new Price(10d), 16));
 
         Basket basket = new Basket(articles,new InMemoryData() );
 

@@ -1,4 +1,4 @@
-package com.ariel;
+package com.ariel.entities;
 
 public class Price {
 

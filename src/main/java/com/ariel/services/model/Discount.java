@@ -1,4 +1,6 @@
-package com.ariel;
+package com.ariel.services.model;
+
+import com.ariel.entities.Article;
 
 public interface Discount< T extends Article> {
 

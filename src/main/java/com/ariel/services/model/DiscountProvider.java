@@ -1,4 +1,4 @@
-package com.ariel;
+package com.ariel.services.model;
 
 import java.util.Map;
 

@@ -1,5 +1,9 @@
 package com.ariel;
 
+import com.ariel.entities.ArticleName;
+import com.ariel.entities.CountableArticle;
+import com.ariel.entities.Price;
+import com.ariel.services.impl.BuySeveralGetNDiscount;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,7 +14,7 @@ public class BuySeveralGetNDiscountTest {
 
         //Given
         BuySeveralGetNDiscount sut = new BuySeveralGetNDiscount(3,2);
-        CountableArticle countableArticle = new CountableArticle(1, new Price(1d), 0);
+        CountableArticle countableArticle = new CountableArticle(1, ArticleName.LAIT, new Price(1d), 0);
 
         //When
         Double discount = sut.calculateDiscount(countableArticle);
@@ -26,7 +30,7 @@ public class BuySeveralGetNDiscountTest {
 
         //Given
         BuySeveralGetNDiscount sut = new BuySeveralGetNDiscount(3,2);
-        CountableArticle countableArticle = new CountableArticle(1, new Price(10d), 1);
+        CountableArticle countableArticle = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 1);
 
         //When
         Double discount = sut.calculateDiscount(countableArticle);
@@ -43,7 +47,7 @@ public class BuySeveralGetNDiscountTest {
 
         //Given
         BuySeveralGetNDiscount sut = new BuySeveralGetNDiscount(3,2);
-        CountableArticle countableArticle = new CountableArticle(1, new Price(10d), 3);
+        CountableArticle countableArticle = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 3);
 
         //When
         Double discount = sut.calculateDiscount(countableArticle);
@@ -60,7 +64,7 @@ public class BuySeveralGetNDiscountTest {
 
         //Given
         BuySeveralGetNDiscount sut = new BuySeveralGetNDiscount(3,2);
-        CountableArticle countableArticle = new CountableArticle(1, new Price(10d), 7);
+        CountableArticle countableArticle = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 7);
 
         //When
         Double discount = sut.calculateDiscount(countableArticle);

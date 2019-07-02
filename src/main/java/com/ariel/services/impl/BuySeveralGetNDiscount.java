@@ -1,4 +1,7 @@
-package com.ariel;
+package com.ariel.services.impl;
+
+import com.ariel.entities.CountableArticle;
+import com.ariel.services.model.Discount;
 
 public class BuySeveralGetNDiscount implements Discount<CountableArticle> {
 

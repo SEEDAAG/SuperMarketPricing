@@ -1,5 +1,9 @@
 package com.ariel;
 
+import com.ariel.entities.ArticleName;
+import com.ariel.entities.CountableArticle;
+import com.ariel.entities.Price;
+import com.ariel.services.impl.QuantityForPriceDiscount;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,7 +15,7 @@ public class QuantityForPriceDiscountTest {
 
         //Given
         QuantityForPriceDiscount sut = new QuantityForPriceDiscount(3, new Price(1d));
-        CountableArticle article = new CountableArticle(1, new Price(13d), 0);
+        CountableArticle article = new CountableArticle(1, ArticleName.LAIT, new Price(13d), 0);
 
 
         //When
@@ -27,7 +31,7 @@ public class QuantityForPriceDiscountTest {
 
         //Given
         QuantityForPriceDiscount sut = new QuantityForPriceDiscount(3, new Price(1d));
-        CountableArticle article = new CountableArticle(1, new Price(10d), 2);
+        CountableArticle article = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 2);
 
 
         //When
@@ -43,7 +47,7 @@ public class QuantityForPriceDiscountTest {
 
         //Given
         QuantityForPriceDiscount sut = new QuantityForPriceDiscount(3, new Price(1d));
-        CountableArticle article = new CountableArticle(1, new Price(10d), 3);
+        CountableArticle article = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 3);
 
 
         //When
@@ -59,7 +63,7 @@ public class QuantityForPriceDiscountTest {
 
         //Given
         QuantityForPriceDiscount sut = new QuantityForPriceDiscount(3, new Price(1d));
-        CountableArticle article = new CountableArticle(1, new Price(10d), 8);
+        CountableArticle article = new CountableArticle(1, ArticleName.LAIT, new Price(10d), 8);
 
 
         //When
